@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Web Design Portfolio Platform"
+description: "A fully responsive HTML and CSS portfolio layout incorporating custom dark mode styling themes."
+---
+
+### Project Overview
+A clean, modular personal developer profile built to demonstrate cross-platform UI engineering and semantic document organization.
+
+### Tech Stack Used
+* **HTML5:** Semantic architecture
+* **CSS3:** Flexible layouts, custom media queries, and responsive grid configurations
+* **Git & GitHub:** Version control management and automated site deployment workflows
+
+### Core Features & Challenges
+* **Responsive Breakpoints:** Configured adaptive grid columns that transition gracefully on modern dynamic viewports.
+* **Integrated Theme Switching:** Engineered smooth background transitions to handle system preferences seamlessly.
