@@ -1,19 +1,19 @@
-// Feature 1: Dark Mode Toggle
-const themeBtn = document.getElementById('theme-btn');
-if (themeBtn) {
-    themeBtn.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', newTheme);
-    });
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const themeButton = document.getElementById('theme-btn');
+    
+    // Check local storage for theme persistence
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+    }
 
-// Feature 2: Responsive Mobile Mobile Navigation
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-
-if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+    themeButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        
+        // Save the selection to keep style across pages
+        if (document.body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
     });
-}
+});
