@@ -3,32 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Professional Portfolio | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main Navigation">
-            <div class="logo">MaryAnn Duman</div>
-            <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰ Menu</button>
-            <ul id="nav-links">
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./projects.html">Projects</a></li>
-</ul>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-        </nav>
+    <header>
+        <div class="header-container">
+            <span class="logo">My Portfolio</span>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            <button id="theme-btn" aria-label="Toggle dark mode">Toggle Theme</button>
+        </div>
     </header>
 
     <main id="main-content">
-        <section class="hero">
-            <h1>Frontend Web Developer</h1>
-            <p>Welcome to my portfolio. I specialize in building accessible, responsive, and highly interactive user interfaces using modern web standards.</p>
-            <button id="theme-btn">Toggle Dark Mode</button>
+        <section class="hero-section">
+            <h1>Hi, I'm a Front-End Web Developer</h1>
+            <p>I build clean, accessible, and responsive user experiences for the web. Welcome to my capstone portfolio project.</p>
+            <a href="projects.html" class="cta-btn">View My Work</a>
+        </section>
+
+        <section class="skills-section">
+            <h2>Core Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Semantic HTML5</h3>
+                    <p>Writing clean, well-structured, and accessible markup for screen readers and SEO optimization.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Responsive CSS3</h3>
+                    <p>Designing custom layouts utilizing modern Flexbox and CSS Grid frameworks that adapt seamlessly.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Adding lightweight dynamic behavior, event listeners, and interactive elements to web applications.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
+        <p>&copy; 2026 Web Developer Portfolio. Built with web accessibility in mind.</p>
     </footer>
 
     <script src="script.js"></script>
