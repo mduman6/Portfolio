@@ -5,7 +5,8 @@ title: "MaryAnn Duman Portfolio"
 
 ## Featured Application
 
-[Link to Live Project Site](https://github.io/mduman6)| [Link to Source Files Codebase](https://github.com/mduman6/Milestone-4),(https://github/mduman6/Milestone/-3)
+[Link to Live Project Site](https://mduman6.github.io/Portfolio/index.html 
+)| [Link to Source Files Codebase](https://github.com/mduman6/Milestone-4),(https://github/mduman6/Milestone/-3)
 
 ### Summary
 ### Project Summary
