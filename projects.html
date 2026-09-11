@@ -1,48 +1,52 @@
-<main id="main-content">
-  <section class="projects-hero">
-    <h1>Engineering Exhibition Showcase</h1>
-    <p>A compilation of production-ready applications built to master front-end responsive layouts, custom DOM systems, and state management architectures.</p>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Work - Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">MD</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active-link">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Theme</button>
+        </nav>
+    </header>
 
-  <section class="projects-grid" aria-label="Developer Portfolio Projects">
-    <!-- Project 1 -->
-    <article class="project-card">
-      <header>
-        <h2>01 / Dynamic Component Dashboard</h2>
-        <span class="tech-tag">Vanilla JS</span>
-        <span class="tech-tag">CSS Grid</span>
-      </header>
-      <p>An interactive tracking interface built to handle dynamic rendering workflows. Features localized filtering states, structured card transitions, and custom metric tracking without the overhead of modern framework virtual DOM overhead.</p>
-      <footer>
-        <a href="https://github.com" aria-label="View Dashboard repository on GitHub" class="project-link">Source Code</a>
-      </footer>
-    </article>
+    <main class="projects-container">
+        <h2 class="section-title">Selected Work</h2>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>A full-stack online shopping application featuring state management and interactive payment processing flows.</p>
+            </div>
 
-    <!-- Project 2 -->
-    <article class="project-card">
-      <header>
-        <h2>02 / Persistent UI Theme Customizer</h2>
-        <span class="tech-tag">HTML5 Data API</span>
-        <span class="tech-tag">Local Storage</span>
-      </header>
-      <p>A proof-of-concept configuration engine designed to manage user experience themes. Leverages browser-side state tracking to prevent visual layout flashes during multi-page context shifts, parsing root custom style attributes dynamically.</p>
-      <footer>
-        <a href="https://github.com" aria-label="View Theme Engine repository on GitHub" class="project-link">Source Code</a>
-      </footer>
-    </article>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <p>A responsive productivity application that helps users organize daily goals using local browser storage.</p>
+            </div>
+        </div>
+    </main>
 
-    <!-- Project 3 -->
-    <article class="project-card">
-      <header>
-        <h2>03 / Adaptive Flexbox Grid Framework</h2>
-        <span class="tech-tag">Fluid CSS</span>
-        <span class="tech-tag">WCAG 2.1 Compliance</span>
-      </header>
-      <p>A production-ready layout template built strictly utilizing fluid mobile-first dimensions. Thoroughly stress-tested across extreme viewport ranges to guarantee zero overflow boundaries, absolute structural symmetry, and perfect focus-state keyboard routing.</p>
-      <footer>
-        <a href="https://github.com" aria-label="View Grid Framework repository on GitHub" class="project-link">Source Code</a>
-      </footer>
-    </article>
-  </section>
-</main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
+</body>
+</html>
