@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Project Spotlight"
+title: "MaryAnn Duman Portfolio"
 ---
 
 ## Featured Application
