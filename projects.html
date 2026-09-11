@@ -1,60 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"MaryAnn Duman's Portfolio" | Projects</title>
-    <nav>
-  <ul>
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  
-  <button id="theme-btn">Toggle Dark Mode</button>
-
-</nav>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | MaryAnn Duman</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <div class="header-container">
-            <span class="logo">My Portfolio</span>
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
-                </ul>
-            </nav>
-            <button id="theme-btn" aria-label="Toggle dark mode">Toggle Theme</button>
-        </div>
-    </header>
+  <header>
+    <h1>MaryAnn Duman's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-btn">Toggle Dark Mode</button>
+  </header>
 
-    <main id="main-content">
-        <section class="projects-section">
-            <h1>Featured Projects</h1>
-            <p>Here is a detailed breakdown of the technical work I have completed during my capstone course.</p>
+  <main>
+    <h2>My Web Development Projects</h2>
+    <div class="grid">
+      <section class="card">
+        <h3>Kali Creek Website</h3>
+        <p>A responsive web portfolio built using semantic HTML structure, custom CSS properties, and persistent JavaScript interactions.</p>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">View Repository</a>
+      </section>
+    </div>
+  </main>
 
-            <div class="project-list">
-                <article class="project-card">
-                    <h2>E-Commerce Mockup Design</h2>
-                    <p>A comprehensive web interface engineered using HTML grid layouts. The system handles storefront rendering and features an intuitive client interaction interface.</p>
-                    <a href="https://github.com" class="project-link" aria-label="View E-Commerce project source code on GitHub">View Repository</a>
-                </article>
-
-                <article class="project-card">
-                    <h2>Interactive Task Tracker Application</h2>
-                    <p>A functional productivity platform utilizing client-side DOM manipulation. It records entries natively and assists users with sorting individual task flows.</p>
-                    <a href="https://github.com" class="project-link" aria-label="View Task Tracker source code on GitHub">View Repository</a>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+  <footer>
     <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
     <div class="footer-links">
       <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a> | 
