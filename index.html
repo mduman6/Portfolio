@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | MaryAnn Duman</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaryAnn Duman - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">MD</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active-link">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Theme</button>
+        </nav>
+    </header>
 
-  <header>
-    <h1>MaryAnn Duman's Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="theme-btn">Toggle Dark Mode</button>
-  </header>
+    <main class="hero-section">
+        <h1>MaryAnn Duman's Portfolio</h1>
+        <p class="subtitle">Web Developer & Designer | Capstone Project Showcase</p>
+        <div class="cta-buttons">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+            <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </main>
 
-  <main>
-    <h2>Frontend Web Developer</h2>
-    <p>Welcome to my portfolio. I specialize in building accessible, responsive, and highly interactive user interfaces using modern web standards.</p>
-  </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 
-  <footer>
-    <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
-    <div class="footer-links">
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a> | 
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
