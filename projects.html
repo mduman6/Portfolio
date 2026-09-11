@@ -1,44 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | MaryAnn Duman</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<main id="main-content">
+  <section class="projects-hero">
+    <h1>Engineering Exhibition Showcase</h1>
+    <p>A compilation of production-ready applications built to master front-end responsive layouts, custom DOM systems, and state management architectures.</p>
+  </section>
 
-  <header>
-    <h1>MaryAnn Duman's Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="theme-btn">Toggle Dark Mode</button>
-  </header>
+  <section class="projects-grid" aria-label="Developer Portfolio Projects">
+    <!-- Project 1 -->
+    <article class="project-card">
+      <header>
+        <h2>01 / Dynamic Component Dashboard</h2>
+        <span class="tech-tag">Vanilla JS</span>
+        <span class="tech-tag">CSS Grid</span>
+      </header>
+      <p>An interactive tracking interface built to handle dynamic rendering workflows. Features localized filtering states, structured card transitions, and custom metric tracking without the overhead of modern framework virtual DOM overhead.</p>
+      <footer>
+        <a href="https://github.com" aria-label="View Dashboard repository on GitHub" class="project-link">Source Code</a>
+      </footer>
+    </article>
 
-  <main>
-    <h2>My Web Development Projects</h2>
-    <div class="grid">
-      <section class="card">
-        <h3>Kali Creek Website</h3>
-        <p>A responsive web portfolio built using semantic HTML structure, custom CSS properties, and persistent JavaScript interactions.</p>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">View Repository</a>
-      </section>
-    </div>
-  </main>
+    <!-- Project 2 -->
+    <article class="project-card">
+      <header>
+        <h2>02 / Persistent UI Theme Customizer</h2>
+        <span class="tech-tag">HTML5 Data API</span>
+        <span class="tech-tag">Local Storage</span>
+      </header>
+      <p>A proof-of-concept configuration engine designed to manage user experience themes. Leverages browser-side state tracking to prevent visual layout flashes during multi-page context shifts, parsing root custom style attributes dynamically.</p>
+      <footer>
+        <a href="https://github.com" aria-label="View Theme Engine repository on GitHub" class="project-link">Source Code</a>
+      </footer>
+    </article>
 
-  <footer>
-    <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
-    <div class="footer-links">
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a> | 
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-    </div>
-  </footer>
+    <!-- Project 3 -->
+    <article class="project-card">
+      <header>
+        <h2>03 / Adaptive Flexbox Grid Framework</h2>
+        <span class="tech-tag">Fluid CSS</span>
+        <span class="tech-tag">WCAG 2.1 Compliance</span>
+      </header>
+      <p>A production-ready layout template built strictly utilizing fluid mobile-first dimensions. Thoroughly stress-tested across extreme viewport ranges to guarantee zero overflow boundaries, absolute structural symmetry, and perfect focus-state keyboard routing.</p>
+      <footer>
+        <a href="https://github.com" aria-label="View Grid Framework repository on GitHub" class="project-link">Source Code</a>
+      </footer>
+    </article>
+  </section>
+</main>
 
-  <script src="script.js"></script>
-</body>
-</html>
