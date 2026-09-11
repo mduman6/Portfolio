@@ -1,30 +1,27 @@
-// 1. Target the toggle button element
-const themeToggleBtn = document.getElementById('theme-btn');
+// 1. Find the toggle button cleanly based on its text content
+const darkModeToggle = Array.from(document.querySelectorAll('button')).find(
+  btn => btn.textContent.trim() === 'Toggle Dark Mode'
+) || document.querySelector('.toggle-btn');
 
-// 2. Check localStorage when the page loads to see if the user likes dark mode
-const savedTheme = localStorage.getItem('portfolio-theme');
+// 2. Check localStorage when the page immediately loads
+const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
 
-if (savedTheme === 'dark') {
+// 3. If dark mode was enabled previously, apply it right away
+if (isDarkMode) {
   document.body.classList.add('dark-mode');
-  // Also tell screen readers dark mode is currently active
-  if (themeToggleBtn) {
-    themeToggleBtn.setAttribute('aria-label', 'Switch to light purple theme');
-  }
 }
 
-// 3. Add an event listener to run whenever the button is clicked
-if (themeToggleBtn) {
-  themeToggleBtn.addEventListener('click', () => {
+// 4. Guard clause: Only add the listener if the button exists on the current page
+if (darkModeToggle) {
+  darkModeToggle.addEventListener('click', () => {
     // Toggle the dark-mode class on the body
     document.body.classList.toggle('dark-mode');
     
-    // 4. Save the current choice so it stays active across other pages
+    // Save the preference in the browser's localStorage
     if (document.body.classList.contains('dark-mode')) {
-      localStorage.setItem('portfolio-theme', 'dark');
-      themeToggleBtn.setAttribute('aria-label', 'Switch to light purple theme');
+      localStorage.setItem('darkMode', 'enabled');
     } else {
-      localStorage.setItem('portfolio-theme', 'light');
-      themeToggleBtn.setAttribute('aria-label', 'Switch to dark purple theme');
+      localStorage.setItem('darkMode', 'disabled');
     }
   });
 }
