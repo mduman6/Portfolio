@@ -1,0 +1,11 @@
+# 1. Create the blank file
+touch .nojekyll
+
+# 2. Stage the new file
+git add .nojekyll
+
+# 3. Commit it with a message
+git commit -m "Add .nojekyll to fix GitHub Pages build error"
+
+# 4. Push it to your repository
+git push origin main
