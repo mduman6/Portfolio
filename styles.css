@@ -1,28 +1,21 @@
-/* ==========================================================================
-   1. Base Themes with Purple Palette
-   ========================================================================== */
 :root {
-  --bg-color: #f3f0f7;         /* Very light soft purple */
-  --text-color: #2a1b3d;       /* Deep dark purple-black for clear text reading */
-  --primary-color: #6a1b9a;    /* Rich royal purple for active headers and main buttons */
-  --card-bg: #ffffff;          /* White cards to stand out on the light purple bg */
+  --bg-color: #f3f0f7;
+  --text-color: #2a1b3d;
+  --primary-color: #6a1b9a;
+  --card-bg: #ffffff;
   --input-bg: #ffffff;
-  --border-color: #d1c4e9;     /* Soft lavender border lines */
+  --border-color: #d1c4e9;
 }
 
-/* This combines your data-theme and JavaScript .dark-mode class securely */
-[data-theme="dark"], body.dark-mode {
-  --bg-color: #1a0f2e;         /* Deep, dark twilight violet background */
-  --text-color: #f1eef6;       /* Bright lavender-white text for excellent contrast */
-  --primary-color: #b388ff;    /* Vibrant neon purple-lilac for links and toggles */
-  --card-bg: #25163f;          /* Rich mid-purple for cards and structural blocks */
-  --input-bg: #311b92;         /* Dark indigo-purple for text input backgrounds */
-  --border-color: #4a148c;     /* Strong purple border lines */
+body.dark-mode {
+  --bg-color: #1a0f2e;
+  --text-color: #f1eef6;
+  --primary-color: #b388ff;
+  --card-bg: #25163f;
+  --input-bg: #311b92;
+  --border-color: #4a148c;
 }
 
-/* ==========================================================================
-   2. Base Body & Structural Layout
-   ========================================================================== */
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
@@ -32,7 +25,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Navigation Layout */
 nav {
   display: flex;
   justify-content: space-between;
@@ -56,15 +48,11 @@ nav a {
   font-weight: bold;
 }
 
-/* Selection Highlights for Active Page */
 nav a.active {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
 }
 
-/* ==========================================================================
-   3. Content Components & Responsive Grid
-   ========================================================================== */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -72,52 +60,35 @@ nav a.active {
   margin-top: 1.5rem;
 }
 
-.card {
+.card, .contact-container {
   background-color: var(--card-bg);
   padding: 1.5rem;
   border-radius: 6px;
   border: 1px solid var(--border-color);
-}
-
-/* Mobile Responsiveness (Screens under 768px) */
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ==========================================================================
-   4. Forms, Buttons & Interactive Elements
-   ========================================================================== */
-.contact-container {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  padding: 2rem;
-  border-radius: 6px;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 40px auto;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form input, .contact-form textarea {
   background-color: var(--input-bg);
   color: var(--text-color);
   border: 1px solid var(--border-color);
+  padding: 12px;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
-/* High Contrast Accessible Focus Outline */
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid var(--primary-color);
-}
-
-/* Theme & Submission Buttons */
 #theme-btn, .submit-btn {
   padding: 0.75rem 1.5rem;
   background-color: var(--primary-color);
@@ -126,26 +97,12 @@ nav a.active {
   cursor: pointer;
   font-size: 1rem;
   border-radius: 4px;
-  margin-top: 1rem;
   font-weight: bold;
-  transition: background-color 0.2s ease;
 }
 
-/* Ensure the button text flips contrast cleanly on Dark Mode */
-[data-theme="dark"] #theme-btn, 
-body.dark-mode #theme-btn,
-[data-theme="dark"] .submit-btn,
-body.dark-mode .submit-btn {
-  color: #1a0f2e; /* Dark purple text inside light button for high accessibility */
-}
-
-/* ==========================================================================
-   5. Footer Structure
-   ========================================================================== */
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
   border-top: 1px solid var(--border-color);
-  margin-top: 3rem;
 }
