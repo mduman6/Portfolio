@@ -1,11 +1,12 @@
 @import url('https://googleapis.com');
 
+
 :root {
-    --bg-primary: #0f172a;       /* Deep slate blue */
+    --bg-primary: #0f172a;       /* Deep slate purple */
     --bg-secondary: #1e293b;     /* Card background */
-    --text-main: #f8fafc;        /* Off-white */
-    --text-muted: #94a3b8;       /* Muted gray text */
-    --accent-color: #06b6d4;     /* Vibrant Neon Cyan */
+    --text-main: #f8fafc;        /* Off-pink */
+    --text-muted: #94a3b8;       /* Muted black text */
+    --accent-color: #06b6d4;     /* Vibrant Neon red */
     --accent-gradient: linear-gradient(135deg, #06b6d4, #3b82f6);
     --transition-speed: 0.3s;
 }
