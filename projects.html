@@ -1,52 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selected Work - Projects</title>
+    <title>Selected Work | MaryAnn Duman</title>
+    <!-- 1. Font Awesome for clean layout icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- 2. Connection to your stylesheet (Add this exact line) -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav class="nav-container">
-            <div class="logo">MD</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active-link">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Theme</button>
-        </nav>
-    </header>
 
-    <main class="projects-container">
-        <h2 class="section-title">Selected Work</h2>
-        
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>E-Commerce Platform</h3>
-                <p>A full-stack online shopping application featuring state management and interactive payment processing flows.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MD<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="index.html#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
             </div>
+        </div>
+    </nav>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Task Management App</h3>
-                <p>A responsive productivity application that helps users organize daily goals using local browser storage.</p>
+    <!-- Projects Section Content -->
+    <main class="projects-page-wrapper">
+        <div class="container">
+            <header class="page-header">
+                <span class="badge">Portfolio Work</span>
+                <h1 class="hero-title">Selected <span class="gradient-text">Work</span></h1>
+                <p class="hero-lead">A detailed breakdown of applications, interface designs, and functional capstone targets.</p>
+            </header>
+
+            <div class="projects-grid">
+                <!-- Project 1: E-Commerce Platform -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Full-Stack Application</span>
+                        <h3>E-Commerce Platform</h3>
+                        <p class="project-description">A full-stack online shopping application featuring state management and interactive payment processing flows.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Stripe API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> View Code</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Task Management App -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Productivity Tool</span>
+                        <h3>Task Management App</h3>
+                        <p class="project-description">A responsive productivity application that helps users organize daily goals using local browser storage parameters.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Local Storage</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-brands fa-github"></i> View Code</a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
-            <div class="social-links">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
+    <!-- Footer Elements -->
+    <footer class="footer">
+        <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
+        <div class="footer-links">
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
