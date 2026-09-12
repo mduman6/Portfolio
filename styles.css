@@ -2,8 +2,8 @@
    1. FORCE THE ENTIRE CANVAS BACKGROUND (CRITICAL TOP FIX)
    ======================================================= */
 html, body {
-    background-color: #030712 !important; /* Force deep cyber night background */
-    color: #f3f4f6 !important;            /* Force clean silver-white text color */
+    background-color:#06141d !important; /* Force deep cyber night background */
+    color: #f3f4f6 !important; /* Force clean silver-white text color */
 }
 
 /* =======================================================
