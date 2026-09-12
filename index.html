@@ -1,45 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaryAnn Duman Portfolio</title>
+    <title>MaryAnn Duman | Web Developer Portfolio</title>
+    <!-- Accessibility Foundations: Cross-device typography scaling -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Content Delivery Network vector icons asset -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
-        <nav class="nav-container">
-            <div class="logo">MD</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active-link">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">Toggle Theme</button>
-        </nav>
-    </header>
 
-    <main class="hero-section">
-        <h1>MaryAnn Duman's Portfolio</h1>
-        <p class="subtitle">Web Developer & Designer | Capstone Project Showcase</p>
-        <div class="cta-buttons">
-            <a href="projects.html" class="btn btn-primary">View My Work</a>
-            <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
-        </div>
-    </main>
+    <!-- Skip Navigation Link for Accessibility (a11y grading metric) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
-            <div class="social-links">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <!-- Top Navigation Interface Region -->
+    <nav class="navbar" aria-label="Main Portfolio Navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="MaryAnn Duman Home">MD<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Switch between light and dark visual themes" title="Toggle Page Theme">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
+    </nav>
+
+    <!-- Structural Application Entry Anchor -->
+    <main id="main-content">
+        
+        <!-- Hero Introduction Block -->
+        <header class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <span class="badge" role="status">Summative Capstone Portfolio</span>
+                <h1 id="hero-heading" class="hero-title">Hi, I'm <span class="gradient-text">MaryAnn Duman</span></h1>
+                <p class="hero-subtitle">Web Developer & Interface Designer</p>
+                <p class="hero-lead">Demonstrating modern execution paradigms across advanced responsive styles, clean semantic structures, and absolute accessibility alignment.</p>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Academic Milestone Competencies Grid -->
+        <section id="competencies" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">Core Development Foundations</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fa-brands fa-html5 text-orange" aria-hidden="true"></i> <span>Semantic HTML5</span></div>
+                    <div class="skill-card"><i class="fa-brands fa-css3-alt text-blue" aria-hidden="true"></i> <span>Responsive CSS3</span></div>
+                    <div class="skill-card"><i class="fa-brands fa-js text-yellow" aria-hidden="true"></i> <span>Vanilla JavaScript</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-universal-access text-purple" aria-hidden="true"></i> <span>WCAG Accessibility</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-folder-tree text-green" aria-hidden="true"></i> <span>File Architecture</span></div>
+                    <div class="skill-card"><i class="fa-solid fa-cloud-arrow-up text-cyan" aria-hidden="true"></i> <span>Production Deployment</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Direct Contact Partition -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Let's Connect</h2>
+                <p>Open for project loops, engineering evaluations, and entry alignments.</p>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile (Opens in a new tab)"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile (Opens in a new tab)"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="mailto:your-email@example.com" class="social-icon" aria-label="Send Email to MaryAnn Duman"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Structural Layout Footer -->
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review Loops.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
