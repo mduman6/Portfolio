@@ -1,26 +1,42 @@
-/* ==========================================
-   COOL CYBER MIDNIGHT THEME INITIALIZATION 
-   ========================================== */
-:root, [data-theme="dark"] {
-    /* Main Canvas Backgrounds (Cool Midnight Space Blues) */
-    --bg-base: #030712;           /* Deep obsidian night canvas */
-    --bg-surface: #0b1528;        /* Rich dark navy for layout blocks */
-    --bg-card: #111e38;           /* Cool slate-metallic blue for content cards */
-    --border-color: rgba(147, 51, 234, 0.15); 
+/* =======================================================
+   1. FORCE THE ENTIRE CANVAS BACKGROUND (CRITICAL TOP FIX)
+   ======================================================= */
+html, body {
+    background-color: #030712 !important; /* Force deep cyber night background */
+    color: #f3f4f6 !important;            /* Force clean silver-white text color */
+}
+
+/* =======================================================
+   2. COOL CYBER VARIABLE MAPS FOR CARD SYSTEMS
+   ======================================================= */
+:root {
+    --bg-base: #030712;
+    --bg-surface: #0b1528;
+    --bg-card: #111e38;
+    --border-color: rgba(147, 51, 234, 0.25);
     
-    /* Typography Palette */
-    --text-primary: #f3f4f6;       /* Crisp silver-white text */
-    --text-secondary: #93c5fd;     /* Soft cool blue for tags and subheaders */
-    --text-muted: #64748b;         
+    --text-primary: #f3f4f6;
+    --text-secondary: #93c5fd;
+    --text-muted: #64748b;
     
-    /* Cool Accent Branding Gradients */
-    --brand-primary: #a855f7;     /* Cyber Neon Purple */
-    --brand-secondary: #06b6d4;   /* Electric Liquid Cyan */
+    --brand-primary: #a855f7;
+    --brand-secondary: #06b6d4;
     --brand-gradient: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%);
 }
 
-/* Force body styling alignment */
-body {
-    background-color: var(--bg-base) !important;
-    color: var(--text-primary) !important;
+/* =======================================================
+   3. OVERRIDE ANY FLOATING WHITE BLOCKS IN YOUR SECTIONS
+   ======================================================= */
+header, section, div, main, nav, footer {
+    background-color: transparent; /* Prevent HTML layout boxes from showing as white blocks */
+}
+
+.navbar {
+    background-color: rgba(3, 7, 18, 0.9) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-card, .skill-card {
+    background-color: var(--bg-surface) !important;
+    border: 1px solid var(--border-color) !important;
 }
