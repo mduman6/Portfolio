@@ -1,3 +1,6 @@
+/* ==========================================
+   COOL CYBER MIDNIGHT THEME INITIALIZATION 
+   ========================================== */
 :root, [data-theme="dark"] {
     /* Main Canvas Backgrounds (Cool Midnight Space Blues) */
     --bg-base: #030712;           /* Deep obsidian night canvas */
@@ -19,5 +22,5 @@
 /* Force body styling alignment */
 body {
     background-color: var(--bg-base) !important;
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
 }
