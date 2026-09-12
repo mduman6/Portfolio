@@ -1,87 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selected Work | MaryAnn Duman</title>
-    <!-- 1. Font Awesome for clean layout icons -->
+    <title>Projects & Milestones | MaryAnn Duman</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cloudflare.com">
-    <!-- 2. Connection to your stylesheet (Add this exact line) -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <a href="#main-projects" class="skip-link">Skip to projects layout</a>
+
+    <nav class="navbar" aria-label="Main Portfolio Navigation">
         <div class="nav-container">
-            <a href="index.html" class="logo">MD<span class="dot">.</span></a>
+            <a href="index.html" class="logo" aria-label="MaryAnn Duman Home">MD<span class="dot">.</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="projects.html" class="active">Projects</a>
+                <a href="projects.html" class="active" aria-current="page">Projects</a>
                 <a href="index.html#contact">Contact</a>
-                <button id="theme-toggle" aria-label="Toggle theme">
-                    <i class="fa-solid fa-moon"></i>
+                <button id="theme-toggle" aria-label="Switch between light and dark visual themes" title="Toggle Page Theme">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Projects Section Content -->
-    <main class="projects-page-wrapper">
+    <main id="main-projects" class="projects-page-wrapper">
         <div class="container">
+            
             <header class="page-header">
-                <span class="badge">Portfolio Work</span>
+                <span class="badge" role="status">Engineering Archive</span>
                 <h1 class="hero-title">Selected <span class="gradient-text">Work</span></h1>
-                <p class="hero-lead">A detailed breakdown of applications, interface designs, and functional capstone targets.</p>
+                <p class="hero-lead">A comprehensive look at specialized builds, architectural frameworks, and grading project benchmarks.</p>
             </header>
 
-            <div class="projects-grid">
-                <!-- Project 1: E-Commerce Platform -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <span class="project-tag">Full-Stack Application</span>
-                        <h3>E-Commerce Platform</h3>
-                        <p class="project-description">A full-stack online shopping application featuring state management and interactive payment processing flows.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Stripe API</span>
+            <!-- Projects Flex/Grid Block Container -->
+            <section class="section-block" aria-labelledby="repos-heading">
+                <h2 id="repos-heading" class="section-subtitle"><i class="fa-solid fa-code-branch" aria-hidden="true"></i> GitHub Showcase</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Card Entity 1 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag">Full-Stack Interface</span>
+                            <h3>E-Commerce Platform</h3>
+                            <p class="project-description">An online shopping platform built with centralized state management, responsive shopping carts, and programmatic checkout pipelines.</p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>State Engine</span>
+                                <span>CSS Layouts</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code Repository</a>
+                                <a href="#" class="btn-live"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Application</a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fa-brands fa-github"></i> View Code</a>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
+                    </article>
 
-                <!-- Project 2: Task Management App -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <span class="project-tag">Productivity Tool</span>
-                        <h3>Task Management App</h3>
-                        <p class="project-description">A responsive productivity application that helps users organize daily goals using local browser storage parameters.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Local Storage</span>
-                            <span>CSS Grid</span>
+                    <!-- Card Entity 2 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <span class="project-tag">Productivity Core</span>
+                            <h3>Task Management App</h3>
+                            <p class="project-description">A responsive workspace optimization engine leveraging client-side browser storage to preserve complex user target parameters.</p>
+                            <div class="project-tech">
+                                <span>Web Storage</span>
+                                <span>DOM Manipulation</span>
+                                <span>Semantic Rules</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code Repository</a>
+                                <a href="#" class="btn-live"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Application</a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fa-brands fa-github"></i> View Code</a>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Capstone Performance Roadmap Component -->
+            <section class="section-block milestone-wrapper" aria-labelledby="milestone-heading">
+                <h2 id="milestone-heading" class="section-subtitle"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Academic Progress Timeline</h2>
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Milestone 01</div>
+                        <div class="timeline-content">
+                            <h4>Semantic Layout Foundations</h4>
+                            <p>Implemented structural asset directory layouts, configured relative path links, and launched the initial site framework via GitHub Pages.</p>
                         </div>
                     </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Milestone 02</div>
+                        <div class="timeline-content">
+                            <h4>Style Rules Scaling</h4>
+                            <p>Transformed raw layouts using CSS custom properties, grid networks, and clean visual themes, eliminating stark unstyled components.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Milestone 03</div>
+                        <div class="timeline-content">
+                            <h4>Dynamic Actions Deployment</h4>
+                            <p>Engineered comprehensive programmatic DOM event rules to enable dark-to-light theme switching via browser memory persistence.</p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+            </section>
+
         </div>
     </main>
 
-    <!-- Footer Elements -->
-    <footer class="footer">
-        <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review.</p>
-        <div class="footer-links">
-            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        </div>
+    <footer class="footer" role="contentinfo">
+        <p>&copy; 2026 MaryAnn Duman. Built for Capstone Review Loops.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+</html>
