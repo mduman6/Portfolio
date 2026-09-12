@@ -32,7 +32,7 @@ header, section, div, main, nav, footer {
 }
 
 .navbar {
-    background-color: rgba(3, 7, 18, 0.9) !important;
+    background-color: #06141d(3, 7, 18, 0.9) !important;
     border-bottom: 1px solid var(--border-color);
 }
 
